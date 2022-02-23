@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int volume(int height, int width, int length);
+int volume(int height, int width, int length); //function prototype
 
 int main() {
     int box1Height, box1Width, box1Length;
     int box2Height, box2Width, box2Length;
     int totalVolume, totalSurface;
     
-    cout << "Enter Box 1 Height : ";
-    cin >> box1Height;
+    cout << "Enter Box 1 Height : "; //dusplay "Enter Box 1 Height : "
+    cin >> box1Height;     //read box1Height
     cout << "Enter Box 1 Width : ";
     cin >> box1Width;
     cout << "Enter Box 1 Length : ";
@@ -25,9 +25,13 @@ int main() {
     totalVolume = volume(box1Height, box1Width, box1Length)
              + volume(box2Height, box2Width, box2Length);
              
-    cout << "Volume of Box is " << totalVolume << endl;
+    cout << "Volume of Box is " << totalVolume << endl; //display volume of box 
     
-    return 0;
+    return 0; //end of the main function
 }
 
 // Implement the Volume() function here
+int volume(int heigth, int width, int length) 
+{
+  return heigth * width * length;  //calculating volume
+}
